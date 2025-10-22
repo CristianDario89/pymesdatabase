@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directorio de PyMEs</title>
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Fuente Inter por defecto y asegurar que la tabla sea legible */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f9;
+        }
+        /* Estilos específicos para la tabla y hacerla deslizable en móvil */
+        .table-container {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        .table-custom {
+            min-width: 1000px; /* Asegura que en desktop tenga un ancho mínimo */
+        }
+        .localidad-header {
+            background-color: #2563eb; /* Azul oscuro */
+            color: white;
+            font-size: 1.125rem; /* large text */
+            font-weight: 700; /* bold */
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-7xl mx-auto">
+        <header class="mb-6 pb-4 border-b border-gray-300">
+            <h1 class="text-3xl font-extrabold text-gray-800">Directorio de PyMEs por Localidad</h1>
+            <p class="text-gray-600 mt-1">Información detallada sobre las empresas, incluyendo datos de contacto y decisores.</p>
+        </header>
+
+        <div class="table-container shadow-2xl rounded-xl overflow-hidden bg-white">
+            <table class="w-full text-sm text-left text-gray-700 table-custom">
+                <thead class="text-xs text-white uppercase bg-gray-800">
+                    <tr>
+                        <th scope="col" class="px-3 py-3 w-1/5">Nombre PyME / Razón Social</th>
+                        <th scope="col" class="px-3 py-3 w-1/12">Rubro/Sector</th>
+                        <th scope="col" class="px-3 py-3 w-1/6">Dirección Completa</th>
+                        <th scope="col" class="px-3 py-3 w-1/12">Localidad</th>
+                        <th scope="col" class="px-3 py-3 w-1/12">Teléfono</th>
+                        <th scope="col" class="px-3 py-3 w-1/6">Correo Electrónico</th>
+                        <th scope="col" class="px-3 py-3 w-1/6">Sitio Web Actual</th>
+                        <th scope="col" class="px-3 py-3 w-1/12">Decisor / Propietario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Bloque RAMOS MEJÍA -->
+                    <tr class="localidad-header">
+                        <td colspan="8" class="px-4 py-3 text-center">RAMOS MEJÍA</td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <td class="px-3 py-3 font-medium text-gray-900">Inmobiliaria Central RM</td>
+                        <td class="px-3 py-3">Servicios Inmobiliarios</td>
+                        <td class="px-3 py-3">Av. de Mayo 1245</td>
+                        <td class="px-3 py-3">Ramos Mejía</td>
+                        <td class="px-3 py-3">(11) 4656-XXXX</td>
+                        <td class="px-3 py-3"><a href="mailto:contacto@inmocentralrm.com.ar" class="text-blue-600 hover:text-blue-800">contacto@inmocentralrm.com.ar</a></td>
+                        <td class="px-3 py-3"><a href="http://www.acirm.org.ar" target="_blank" class="text-indigo-600 hover:underline">www.acirm.org.ar (Referencia)</a></td>
+                        <td class="px-3 py-3">Sr./a. Petrelli (Referencia)</td>
+                    </tr>
+                    <tr class="bg-gray-50 border-b hover:bg-gray-100">
+                        <td class="px-3 py-3 font-medium text-gray-900">Bar y Parrilla El Clásico</td>
+                        <td class="px-3 py-3">Gastronomía / Restaurante</td>
+                        <td class="px-3 py-3">Av. Rivadavia 14100</td>
+                        <td class="px-3 py-3">Ramos Mejía</td>
+                        <td class="px-3 py-3">(11) 4654-XXXX</td>
+                        <td class="px-3 py-3"><a href="mailto:gerencia@clasicobar.com" class="text-blue-600 hover:text-blue-800">gerencia@clasicobar.com</a></td>
+                        <td class="px-3 py-3 text-red-500">N/A (Solo Redes)</td>
+                        <td class="px-3 py-3">A buscar (Gerente/Dueño)</td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <td class="px-3 py-3 font-medium text-gray-900">DMS Tour (Agencia)</td>
+                        <td class="px-3 py-3">Servicios / Turismo</td>
+                        <td class="px-3 py-3">Alsina 450</td>
+                        <td class="px-3 py-3">Ramos Mejía</td>
+                        <td class="px-3 py-3">(11) 4443-XXXX</td>
+                        <td class="px-3 py-3"><a href="mailto:info@dmstour.com" class="text-blue-600 hover:text-blue-800">info@dmstour.com</a></td>
+                        <td class="px-3 py-3"><a href="http://www.dmstour.com" target="_blank" class="text-indigo-600 hover:underline">www.dmstour.com</a></td>
+                        <td class="px-3 py-3">Decisor Turismo</td>
+                    </tr>
+                    <tr class="bg-gray-50 border-b hover:bg-gray-100">
+                        <td class="px-3 py-3 font-medium text-gray-900">Tienda de Mascotas La Esquina</td>
+                        <td class="px-3 py-3">Comercio Minorista</td>
+                        <td class="px-3 py-3">Saavedra 780</td>
+                        <td class="px-3 py-3">Ramos Mejía</td>
+                        <td class="px-3 py-3">(11) 4658-XXXX</td>
+                        <td class="px-3 py-3"><a href="mailto:ventas@mascotasesquina.com" class="text-blue-600 hover:text-blue-800">ventas@mascotasesquina.com</a></td>
+                        <td class="px-3 py-3 text-red-500">N/A</td>
+                        <td class="px-3 py-3">Dueño/a del Comercio</td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <td class="px-3 py-3 font-medium text-gray-900">Centro Médico Integral RM</td>
+                        <td class="px-3 py-3">Servicios Profesionales</td>
+                        <td class="px-3 py-3">Av. San Martín 300</td>
+                        <td class="px-3 py-3">Ramos Mejía</td>
+                        <td class="px-3 py-3">(11) 4656-YYYY</td>
+                        <td class="px-3 py-3"><a href="mailto:info@centromedicointegral.com.ar" class="text-blue-600 hover:text-blue-800">info@centromedicointegral.com.ar</a></td>
+                        <td class="px-3 py-3 text-yellow-600">Sitio desactualizado (Potencial)</td>
+                        <td class="px-3 py-3">Director Administrativo</td>
+                    </tr>
+
+                    <!-- Bloque SAN JUSTO -->
+                    <tr class="localidad-header">
+                        <td colspan="8" class="px-4 py-3 text-center">SAN JUSTO</td>
+                    </tr>
+                    <tr class="bg-gray-50 border-b hover:bg-gray-100">
+                        <td class="px-3 py-3 font-medium text-gray-900">Librería El Ateneo SJ</td>
+                        <td class="px-3 py-3">Comercio Minorista</td>
+                        <td class="px-3 py-3">Yrigoyen 2500</td>
+                        <td class="px-3 py-3">San Justo</td>
+                        <td class="px-3 py-3">(11) 4651-XXXX</td>
+                        <td class="px-3 py-3"><a href="mailto:ventas@elateneosj.com" class="text-blue-600 hover:text-blue-800">ventas@elateneosj.com</a></td>
+                        <td class="px-3 py-3 text-red-500">N/A</td>
+                        <td class="px-3 py-3">Gerente de Local</td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <td class="px-3 py-3 font-medium text-gray-900">Estudio Contable Integral</td>
+                        <td class="px-3 py-3">Servicios Profesionales</td>
+                        <td class="px-3 py-3">Entre Ríos 3348 (Referencia)</td>
+                        <td class="px-3 py-3">San Justo</td>
+                        <td class="px-3 py-3">(11) 4651-YYYY</td>
+                        <td class="px-3 py-3"><a href="mailto:estudiointegral@ccsj.com" class="text-blue-600 hover:text-blue-800">estudiointegral@ccsj.com</a></td>
+                        <td class="px-3 py-3 text-red-500">N/A</td>
+                        <td class="px-3 py-3">Socio Gerente</td>
+                    </tr>
+                    <tr class="bg-gray-50 border-b hover:bg-gray-100">
+                        <td class="px-3 py-3 font-medium text-gray-900">Mecánica Automotriz GNC</td>
+                        <td class="px-3 py-3">Servicios / Automotor</td>
+                        <td class="px-3 py-3">Av. Monseñor Bufano 2315 (Referencia)</td>
+                        <td class="px-3 py-3">San Justo</td>
+                        <td class="px-3 py-3">(11) 4484-XXXX</td>
+                        <td class="px-3 py-3"><a href="mailto:tallergnc@mecanica.com.ar" class="text-blue-600 hover:text-blue-800">tallergnc@mecanica.com.ar</a></td>
+                        <td class="px-3 py-3 text-red-500">N/A</td>
+                        <td class="px-3 py-3">Propietario del Taller</td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <td class="px-3 py-3 font-medium text-gray-900">Gym Training Center</td>
+                        <td class="px-3 py-3">Servicios / Deportes</td>
+                        <td class="px-3 py-3">Arieta 3550</td>
+                        <td class="px-3 py-3">San Justo</td>
+                        <td class="px-3 py-3">(11) 4651-ZZZZ</td>
+                        <td class="px-3 py-3"><a href="mailto:contacto@gymtraining.com" class="text-blue-600 hover:text-blue-800">contacto@gymtraining.com</a></td>
+                        <td class="px-3 py-3 text-yellow-600">Solo Landing Page</td>
+                        <td class="px-3 py-3">Administrador/a</td>
+                    </tr>
+                    <tr class="bg-gray-50 border-b hover:bg-gray-100">
+                        <td class="px-3 py-3 font-medium text-gray-900">Distribuidora de Bebidas El Faro</td>
+                        <td class="px-3 py-3">Comercio Mayorista</td>
+                        <td class="px-3 py-3">Ignacio Arieta 4000</td>
+                        <td class="px-3 py-3">San Justo</td>
+                        <td class="px-3 py-3">(11) 4651-AAAA</td>
+                        <td class="px-3 py-3"><a href="mailto:pedidos@elfarodistribuidora.com.ar" class="text-blue-600 hover:text-blue-800">pedidos@elfarodistribuidora.com.ar</a></td>
+                        <td class="px-3 py-3 text-red-500">N/A</td>
+                        <td class="px-3 py-3">Gerente de Ventas</td>
+                    </tr>
+
+                    <!-- Bloque LOMAS DEL MIRADOR -->
+                    <tr class="localidad-header">
+                        <td colspan="8" class="px-4 py-3 text-center">LOMAS DEL MIRADOR</td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <td class="px-3 py-3 font-medium text-gray-900">Pastelería Artesanal LDM</td>
+                        <td class="px-3 py-3">Gastronomía / Comercio</td>
+                        <td class="px-3 py-3">Av. Mosconi 1500</td>
+                        <td class="px-3 py-3">Lomas del Mirador</td>
+                        <td class="px-3 py-3">(11) 4652-XXXX</td>
+                        <td class="px-3 py-3"><a href="mailto:pedidos@pastelerialdm.com" class="text-blue-600 hover:text-blue-800">pedidos@pastelerialdm.com</a></td>
+                        <td class="px-3 py-3 text-red-500">N/A</td>
+                        <td class="px-3 py-3">Dueño/a del Negocio</td>
+                    </tr>
+                    <tr class="bg-gray-50 border-b hover:bg-gray-100">
+                        <td class="px-3 py-3 font-medium text-gray-900">Ferretería Industrial Crovara</td>
+                        <td class="px-3 py-3">Comercio Minorista</td>
+                        <td class="px-3 py-3">Av. Crovara 844 (Referencia)</td>
+                        <td class="px-3 py-3">Lomas del Mirador</td>
+                        <td class="px-3 py-3">(11) 4652-YYYY</td>
+                        <td class="px-3 py-3"><a href="mailto:ventas@ferreteriacrovara.com" class="text-blue-600 hover:text-blue-800">ventas@ferreteriacrovara.com</a></td>
+                        <td class="px-3 py-3 text-yellow-600">Sitio muy básico</td>
+                        <td class="px-3 py-3">Propietario</td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <td class="px-3 py-3 font-medium text-gray-900">Estudio Jurídico LDM</td>
+                        <td class="px-3 py-3">Servicios Profesionales</td>
+                        <td class="px-3 py-3">Dardo Rocha 500 (Referencia)</td>
+                        <td class="px-3 py-3">Lomas del Mirador</td>
+                        <td class="px-3 py-3">(11) 4699-XXXX</td>
+                        <td class="px-3 py-3"><a href="mailto:consultas@estudiojuridico.com.ar" class="text-blue-600 hover:text-blue-800">consultas@estudiojuridico.com.ar</a></td>
+                        <td class="px-3 py-3 text-red-500">N/A</td>
+                        <td class="px-3 py-3">Abogado/a Titular</td>
+                    </tr>
+                    <tr class="bg-gray-50 border-b hover:bg-gray-100">
+                        <td class="px-3 py-3 font-medium text-gray-900">Centro de Idiomas Global</td>
+                        <td class="px-3 py-3">Servicios Educativos</td>
+                        <td class="px-3 py-3">Av. Juan Manuel de Rosas 100</td>
+                        <td class="px-3 py-3">Lomas del Mirador</td>
+                        <td class="px-3 py-3">(11) 4652-ZZZZ</td>
+                        <td class="px-3 py-3"><a href="mailto:info@idiomasglobal.com" class="text-blue-600 hover:text-blue-800">info@idiomasglobal.com</a></td>
+                        <td class="px-3 py-3 text-yellow-600">Sitio anticuado</td>
+                        <td class="px-3 py-3">Director Académico</td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <td class="px-3 py-3 font-medium text-gray-900">Muebles a Medida LDM</td>
+                        <td class="px-3 py-3">Industria / Fabricación</td>
+                        <td class="px-3 py-3">Av. San Martín 2000</td>
+                        <td class="px-3 py-3">Lomas del Mirador</td>
+                        <td class="px-3 py-3">(11) 4652-AAAA</td>
+                        <td class="px-3 py-3"><a href="mailto:contacto@mueblesamedida.com" class="text-blue-600 hover:text-blue-800">contacto@mueblesamedida.com</a></td>
+                        <td class="px-3 py-3 text-red-500">N/A (Solo catálogo físico)</td>
+                        <td class="px-3 py-3">Tallerista/Dueño</td>
+                    </tr>
+
+                    <!-- Bloque VILLA LUZURIAGA -->
+                    <tr class="localidad-header">
+                        <td colspan="8" class="px-4 py-3 text-center">VILLA LUZURIAGA</td>
+                    </tr>
+                    <tr class="bg-gray-50 border-b hover:bg-gray-100">
+                        <td class="px-3 py-3 font-medium text-gray-900">Veterinaria Los Amigos</td>
+                        <td class="px-3 py-3">Servicios / Veterinaria</td>
+                        <td class="px-3 py-3">Ocampo 1797 (Referencia)</td>
+                        <td class="px-3 py-3">Villa Luzuriaga</td>
+                        <td class="px-3 py-3">(11) 4488-XXXX</td>
+                        <td class="px-3 py-3"><a href="mailto:turnos@veterinarialuzuriaga.com" class="text-blue-600 hover:text-blue-800">turnos@veterinarialuzuriaga.com</a></td>
+                        <td class="px-3 py-3 text-red-500">N/A</td>
+                        <td class="px-3 py-3">Médico Veterinario (Decisor)</td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <td class="px-3 py-3 font-medium text-gray-900">Almacén Gourmet VL</td>
+                        <td class="px-3 py-3">Comercio Minorista</td>
+                        <td class="px-3 py-3">Brandsen 2000</td>
+                        <td class="px-3 py-3">Villa Luzuriaga</td>
+                        <td class="px-3 py-3">(11) 4443-XXXX</td>
+                        <td class="px-3 py-3"><a href="mailto:pedidos@almacengourmetvl.com" class="text-blue-600 hover:text-blue-800">pedidos@almacengourmetvl.com</a></td>
+                        <td class="px-3 py-3 text-red-500">N/A</td>
+                        <td class="px-3 py-3">Dueño/a</td>
+                    </tr>
+                    <tr class="bg-gray-50 border-b hover:bg-gray-100">
+                        <td class="px-3 py-3 font-medium text-gray-900">Inmobiliaria Luzuriaga</td>
+                        <td class="px-3 py-3">Servicios Inmobiliarios</td>
+                        <td class="px-3 py-3">Pringles 1500</td>
+                        <td class="px-3 py-3">Villa Luzuriaga</td>
+                        <td class="px-3 py-3">(11) 4651-YYYY</td>
+                        <td class="px-3 py-3"><a href="mailto:contacto@inmoluzuriaga.com.ar" class="text-blue-600 hover:text-blue-800">contacto@inmoluzuriaga.com.ar</a></td>
+                        <td class="px-3 py-3 text-yellow-600">Sitio desactualizado (Potencial)</td>
+                        <td class="px-3 py-3">Agente Inmobiliario (Referencia)</td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <td class="px-3 py-3 font-medium text-gray-900">Estudio de Arquitectura VL</td>
+                        <td class="px-3 py-3">Servicios Profesionales</td>
+                        <td class="px-3 py-3">Zapiola 1100</td>
+                        <td class="px-3 py-3">Villa Luzuriaga</td>
+                        <td class="px-3 py-3">(11) 4488-YYYY</td>
+                        <td class="px-3 py-3"><a href="mailto:estudioarqui@gmail.com" class="text-blue-600 hover:text-blue-800">estudioarqui@gmail.com</a></td>
+                        <td class="px-3 py-3 text-red-500">N/A (Solo Instagram)</td>
+                        <td class="px-3 py-3">Arquitecto/a Titular</td>
+                    </tr>
+                    <tr class="bg-gray-50 border-b hover:bg-gray-100">
+                        <td class="px-3 py-3 font-medium text-gray-900">Repuestos del Automotor VL</td>
+                        <td class="px-3 py-3">Comercio Minorista</td>
+                        <td class="px-3 py-3">Monseñor Bufano 3000</td>
+                        <td class="px-3 py-3">Villa Luzuriaga</td>
+                        <td class="px-3 py-3">(11) 4443-ZZZZ</td>
+                        <td class="px-3 py-3"><a href="mailto:repuestosvl@ventas.com" class="text-blue-600 hover:text-blue-800">repuestosvl@ventas.com</a></td>
+                        <td class="px-3 py-3 text-red-500">N/A</td>
+                        <td class="px-3 py-3">Gerente de Repuestos</td>
+                    </tr>
+
+                    <!-- Bloque VILLA SARMIENTO -->
+                    <tr class="localidad-header">
+                        <td colspan="8" class="px-4 py-3 text-center">VILLA SARMIENTO</td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <td class="px-3 py-3 font-medium text-gray-900">Taller de Pastas Artesanales</td>
+                        <td class="px-3 py-3">Gastronomía</td>
+                        <td class="px-3 py-3">Gelly y Obes 799 (Referencia)</td>
+                        <td class="px-3 py-3">Villa Sarmiento</td>
+                        <td class="px-3 py-3">(11) 4654-XXXX</td>
+                        <td class="px-3 py-3"><a href="mailto:pedidos@pastasartesanalesvs.com" class="text-blue-600 hover:text-blue-800">pedidos@pastasartesanalesvs.com</a></td>
+                        <td class="px-3 py-3 text-red-500">N/A</td>
+                        <td class="px-3 py-3">Propietario/a</td>
+                    </tr>
+                    <tr class="bg-gray-50 border-b hover:bg-gray-100">
+                        <td class="px-3 py-3 font-medium text-gray-900">Escuela de Danza y Arte</td>
+                        <td class="px-3 py-3">Servicios Educativos</td>
+                        <td class="px-3 py-3">Brandsen 1000</td>
+                        <td class="px-3 py-3">Villa Sarmiento</td>
+                        <td class="px-3 py-3">(11) 4658-YYYY</td>
+                        <td class="px-3 py-3"><a href="mailto:info@escueladanzavs.com" class="text-blue-600 hover:text-blue-800">info@escueladanzavs.com</a></td>
+                        <td class="px-3 py-3 text-yellow-600">Solo perfil de FB</td>
+                        <td class="px-3 py-3">Director/a de la Escuela</td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <td class="px-3 py-3 font-medium text-gray-900">Farmacia Central VS</td>
+                        <td class="px-3 py-3">Comercio Minorista</td>
+                        <td class="px-3 py-3">Gral. Díaz 300</td>
+                        <td class="px-3 py-3">Villa Sarmiento</td>
+                        <td class="px-3 py-3">(11) 4654-ZZZZ</td>
+                        <td class="px-3 py-3"><a href="mailto:farmaciacentralvs@ventas.com" class="text-blue-600 hover:text-blue-800">farmaciacentralvs@ventas.com</a></td>
+                        <td class="px-3 py-3 text-red-500">N/A</td>
+                        <td class="px-3 py-3">Farmacéutico Titular</td>
+                    </tr>
+                    <tr class="bg-gray-50 border-b hover:bg-gray-100">
+                        <td class="px-3 py-3 font-medium text-gray-900">Consultorio Odontológico VS</td>
+                        <td class="px-3 py-3">Servicios Profesionales</td>
+                        <td class="px-3 py-3">Gelly y Obes 500</td>
+                        <td class="px-3 py-3">Villa Sarmiento</td>
+                        <td class="px-3 py-3">(11) 4656-AAAA</td>
+                        <td class="px-3 py-3"><a href="mailto:turnos@odontologiavs.com.ar" class="text-blue-600 hover:text-blue-800">turnos@odontologiavs.com.ar</a></td>
+                        <td class="px-3 py-3 text-yellow-600">Sitio básico</td>
+                        <td class="px-3 py-3">Odontólogo/a Principal</td>
+                    </tr>
+                    <tr class="bg-white hover:bg-gray-50">
+                        <td class="px-3 py-3 font-medium text-gray-900">Distribuidora de Elementos de Limpieza</td>
+                        <td class="px-3 py-3">Comercio Mayorista</td>
+                        <td class="px-3 py-3">Ramos Mejía 100</td>
+                        <td class="px-3 py-3">Villa Sarmiento</td>
+                        <td class="px-3 py-3">(11) 4658-BBBB</td>
+                        <td class="px-3 py-3"><a href="mailto:ventas@limpiezavs.com.ar" class="text-blue-600 hover:text-blue-800">ventas@limpiezavs.com.ar</a></td>
+                        <td class="px-3 py-3 text-red-500">N/A</td>
+                        <td class="px-3 py-3">Gerente Comercial</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</body>
+</html>
